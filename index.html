@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RBXScript – Coming Soon</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: linear-gradient(135deg, #6b5b95, #feb236);
+      font-family: 'Poppins', sans-serif;
+      overflow: hidden;
+    }
+
+    h1 {
+      color: white;
+      font-size: 4rem;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      animation: pulse 2s infinite;
+    }
+
+    @keyframes pulse {
+      0% { transform: scale(1); opacity: 1; }
+      50% { transform: scale(1.1); opacity: 0.8; }
+      100% { transform: scale(1); opacity: 1; }
+    }
+
+    .sparkle {
+      position: absolute;
+      width: 6px;
+      height: 6px;
+      background: white;
+      border-radius: 50%;
+      animation: float 3s infinite;
+    }
+
+    @keyframes float {
+      0% { transform: translateY(0) translateX(0); opacity: 1; }
+      50% { transform: translateY(-50px) translateX(20px); opacity: 0.5; }
+      100% { transform: translateY(0) translateX(-20px); opacity: 1; }
+    }
+  </style>
+</head>
+<body>
+  <h1>Coming Soon</h1>
+
+  <!-- Sparkles -->
+  <div class="sparkle" style="top:10%; left:20%; animation-delay:0s;"></div>
+  <div class="sparkle" style="top:30%; left:70%; animation-delay:1s;"></div>
+  <div class="sparkle" style="top:60%; left:40%; animation-delay:2s;"></div>
+  <div class="sparkle" style="top:80%; left:80%; animation-delay:3s;"></div>
+</body>
+</html>
